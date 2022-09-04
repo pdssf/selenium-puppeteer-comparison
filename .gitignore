@@ -10,4 +10,9 @@ textpattern/
 HISTORY.txt
 README.txt
 .vscode
-/node_modules
+
+# node.js
+#
+node_modules/
+npm-debug.log
+yarn-error.log
