@@ -1,8 +1,10 @@
 #!/bin/bash
-for i in 1 2 3 4 5 6 7 8 9 10
+chmod +x ./containerComparisionCollector.sh
+bash ./containerComparisionCollector.sh
+for i in {1..30}; 
 do
   echo "fazendo o loop numero $i" 
-  echo "conteiner $i" >> stats.txt
-  docker container run puppeteerscrap:latest
+  docker container run puppeteer-robot:latest
   sleep 5
 done
+killall containerComparisionCollector.sh
