@@ -23,10 +23,16 @@ Em seguida, podemos executar o contêiner usando o comando:
 ```sh-session
 $ docker container run puppeteer-robot 
 ```
-Este comando apenas executa o contêiner, para coletar as estatísticas de uso usamos o comando: 
+Este comando apenas executa o contêiner, para executar e coletar as estatísticas de uso usamos o script em runner.sh: 
 <!-- usage -->
 ```sh-session
 $ docker stats >> logs.txt
+```
+Para executar o comando usado para o monitoramento de desempenho, use o comando:
+<!-- usage -->
+```sh-session
+$ ./chmod +x runner.sh
+$ bash runner.sh
 ```
 <!-- usagestop -->
 
@@ -47,3 +53,11 @@ Este comando apenas executa o contêiner, para coletar as estatísticas de uso u
 ```sh-session
 $ docker stats >> logs.txt
 ```
+
+Este comando apenas executa o contêiner, para executar e coletar as estatísticas de uso usamos o script em runner.sh:
+<!-- usage -->
+```sh-session
+$ ./chmod +x runner.sh
+$ bash runner.sh
+```
+<!-- usagestop -->
