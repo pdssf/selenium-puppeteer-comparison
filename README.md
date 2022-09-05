@@ -15,7 +15,7 @@ Para executar os testes é necessário ter o [Docker](https://docs.docker.com/ge
 Para fazer uso do robô precisamos primeiro construir a imagem do contêiner.
 <!-- usage -->
 ```sh-session
-$ cd /puppeteer-robot
+$ cd ./puppeteer-robot
 $ docker image build -t puppeteer-robot . 
 ```
 Em seguida, podemos executar o contêiner usando o comando: 
@@ -34,7 +34,7 @@ $ docker stats >> logs.txt
 Para fazer uso do robô precisamos primeiro construir a imagem do contêiner.
 <!-- usage -->
 ```sh-session
-$ cd /selenium-robot
+$ cd ./selenium-robot
 $ docker image build -t selenium-robot . 
 ```
 Em seguida, podemos executar o contêiner usando o comando: 
